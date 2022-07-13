@@ -1,6 +1,6 @@
 import {
     Cliente
-} from './Cliente.js'
+} from '../Cliente.js'
 
 export class Conta {
     _saldo;
