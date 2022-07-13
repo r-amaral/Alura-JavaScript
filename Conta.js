@@ -34,15 +34,15 @@ export class Conta {
     }
 
     constructor(saldoInicial, cliente, agencia) {
+        if(this.constructor == Conta)
+        throw new Error("Você não deveria criar um onjeto do tipo Conta diretamente!!!");
         this._saldo = saldoInicial;
         this._cliente = cliente;
         this._agencia = agencia;
     }
 
     sacar(valor) {
-        let taxa = 1;
-        return this._sacar(valor, taxa);
-
+        throw new Error("O método sacar da Conta é abstrato");
     }
 
     _sacar(valor, taxa) {
